@@ -1,0 +1,159 @@
+@font-face {
+    font-family: SpotifyFont; /* Give the font a name */
+    src: url('../fonts/CircularSpotifyText-Black.otf') format('truetype'); /* Specify the path to the TTF file */
+  }
+  
+html{
+    font-family: SpotifyFont, Arial, sans-serif;
+
+
+}
+body{
+    background: rgb(18 18 18);
+    width: 95%;
+    margin: auto;
+}
+.header{
+    width: auto;
+    text-align: center;
+    font-size: 300%;
+    margin: 0;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: white;
+}
+.searchParamsNavBar{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+}
+.searchParamsNavBar select{
+    font-size: 120%;
+    color: rgb(18 18 18);
+    font-family: inherit;
+    border-radius: 10px;
+    padding: 1%;
+}
+.searchParamsNavBar button{
+    border-radius: 100px;
+    background:rgba(30, 215, 96,0.8);
+    font-size: 120%;
+    border: 0.15rem solid rgba(25, 20, 20,0.8);
+    color: rgb(18 18 18);
+    font-family: inherit;
+    padding: 1%;
+}
+.searchParamsNavBar button:hover{
+    color: white;    
+    cursor: pointer;
+    text-decoration: underline;
+    border: 0.15rem solid rgba(25, 20, 20);
+}
+.searchParamsNavBar .clearButton{
+    background: white;
+    font-size: 100%;
+    padding: 1%;
+}
+.searchParamsNavBar .clearButton:hover{
+    color: rgb(18 18 18);    
+    cursor: pointer;
+    text-decoration: underline;
+    border: 0.15rem solid rgba(25, 20, 20);
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(18 18 18);
+}
+
+.mainBox{
+    position: relative;
+    height: auto;
+    width: auto;
+    border-radius: 1rem;
+    backdrop-filter: blur(0px);
+    background:rgba(36, 36, 36);
+    border: 0.1rem solid rgba(25, 20, 20);
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    padding:2%;
+    color: white;
+}
+
+.mainBox h1{
+    text-align: center;
+    font-weight: 400;
+    font-size: 3rem;
+    padding: 2%;
+}
+.mainBox h2{
+    font-size: 1.3em;
+    padding: 2%;
+}
+
+.mainBox button{
+    border-radius: 100px;
+    margin: 4%;
+    padding: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    font-size: 100%;
+    background:rgba(30, 215, 96,0.8);
+
+    border: 0.15rem solid rgba(25, 20, 20,0.8);
+    color: rgb(18 18 18);
+    font-family: inherit;
+    font-size: 125%;
+}
+
+.mainBox button:hover{
+    color: white;    
+    cursor: pointer;
+    text-decoration: underline;
+    border: 0.15rem solid rgba(25, 20, 20);
+}
+#divOfListofArtists{
+    margin: 5%;
+    padding: 5%;
+    width: 95%;
+}
+#listOfArtists{
+    color: white;
+    border-radius: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    overflow: auto;
+    padding: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    padding-left:1%;
+    text-align: center;
+
+}
+li img{
+    border-radius: 3000px;
+    width: auto;
+}
+#text{
+    padding-left: 1%;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}

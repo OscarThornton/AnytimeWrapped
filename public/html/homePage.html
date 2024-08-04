@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anytime Wrapped</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+    <link rel="icon" href="../images/Spotify_icon.svg.ico">
+
+</head>
+
+<body onload="onPageLoad()">
+    
+    <h1 class="header"> <a href="homePage.html">Anytime Wrapped</a></h1>
+    <nav class="searchParamsNavBar">
+        <button onclick="getUsersTopItems()">Get Your Top Items</button>
+            <select id="type">
+                <option value="artists">Artists</option>
+                <option value="tracks">Tracks</option>
+            </select>
+            <select id="timeRange">
+                <option value="short_term">4 weeks</option>
+                <option value="medium_term">6 months</option>
+                <option value="long_term">All time</option>
+            </select>
+            <select id="limit">
+                <option value="10">10</option>
+                <option value="20">20</option>
+                <option value="30">30</option>
+                <option value="40">40</option>
+                <option value="50">50</option>
+            </select>      
+            <button class="clearButton" onclick="clearList()">Clear Items</button>
+    </nav>
+        <div id="divOfistOfArtists">
+            <ul id="listOfArtists">
+                <li><h3 id="fillerHeader">Find your top artists and tracks using the filters above!</h3></li>
+            </ul>
+        </div>
+</body>
+</html>
